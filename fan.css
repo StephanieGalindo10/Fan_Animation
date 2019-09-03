@@ -358,7 +358,7 @@ span {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: #008132;
+    background: #ffd000;
     z-index: 2;
 }
 .fan__blades .center::after {
@@ -366,7 +366,7 @@ span {
     content: "";
     width: 40px;
     height: 20px;
-    background: #08355a;
+    background: #000000;
 }
 .head {
     transition: 1s transform;
