@@ -1,0 +1,61 @@
+html {
+    overflow: hidden;
+}
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #addfff, #fff9e8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+body::after {
+    position: absolute;
+    width: 100%;
+    content: "";
+    height: calc(100% - 600px);
+    z-index: 0;
+    background: #efefef;
+    bottom: 0;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+   }
+    to {
+        transform: rotate(360deg);
+   }
+}
+@keyframes off {
+    to {
+        transform: rotate(380deg);
+   }
+}
+@keyframes off2 {
+    to {
+        transform: rotate(880deg);
+   }
+}
+@keyframes fly {
+    to {
+        margin-top: 50px;
+   }
+}
+span {
+    display: block;
+}
+.windows {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
